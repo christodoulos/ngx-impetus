@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build && rsync -avz --delete dist/ngx-impetus/browser/* ubuntu@ntuacloud:ngx-impetus"
   },
   "private": true,
   "dependencies": {
